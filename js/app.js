@@ -38,5 +38,43 @@ if (parking == 'Y') {
 } else {
   alert('I pity the fool that thinks I am bad at parking');
 }
-var closing = prompt('Thank you for playing. If you answered 3 or more right, you re a genius');
-console.log(closing);
+
+
+var tries = 4;
+
+while (tries > 0) {
+  var birthDate = prompt('What day of the month is my birthday?');
+  console.log(birthDate);
+  if (birthDate === 19) {
+    alert('Genius! How did you know?');
+    //some sort of breaking out of a loop
+
+  } else if (birthDate < 19) {
+    alert('Wrong! Too low. Try again.');
+    tries--;
+  } else {
+    alert('Wrong. Too high. Try again');
+    tries--;
+  }
+
+}
+
+
+// var food = ['tacos', 'pizza'];
+// var tries = 4;
+// while (tries > 0) {
+//   var favoriteFood = prompt('What is my favorite food?').toLowerCase;
+//   if (food.includes('tacos', 'pizza')) {
+//     tries = 0;
+//     alert('You read me like a book. Nice!');
+//     correctGuesses++;
+//     break;
+
+//   } else {
+//     alert('Nah, try again brosef or brosefina.');
+//   }
+//   tries--;
+// };
+
+// var closing = prompt('Thank you for playing. If you answered 3 or more right, you re a genius');
+// console.log(closing);
